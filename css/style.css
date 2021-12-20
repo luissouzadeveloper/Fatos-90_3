@@ -76,8 +76,15 @@ section{
     background-attachment: fixed;
 }
 
+/*Corpo do conteúdo*/
+.corpo{
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 450px;
+}
+
 /*Título principal*/
-main > h1{
+h1{
     text-align: center;
     font-family: var(--fonte-crime);
     margin: 15px;
@@ -94,4 +101,28 @@ section > p{
     color: var(--cor5);
     line-height: 1.5;
     text-align: justify;
+}
+
+main > p{
+    margin: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*Quadro da imagem*/
+figure{
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+/*Descrição da imagem*/
+figcaption{
+    color: var(--cor5);
+    text-align: center;
+    margin: 10px;
+}
+
+/*Imagem*/
+img{
+    width: 100%;
 }
