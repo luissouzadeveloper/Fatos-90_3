@@ -139,6 +139,28 @@ figure > img{
     width: 100%;
 }
 
+/*Caixa de conteúdo extra*/
+.extra{
+    background-color: var(--cor2);
+    padding: 7px;
+}
+
+/*Item da caixa*/
+.item{
+    display: flex;
+    margin: 20px;
+    padding: 6%;
+    border-radius: 10px;
+    background-color: var(--cor3);
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Links do extra*/
+.item > a{
+    color: var(--cor5);
+}
+
 /*Rodapé*/
 footer{
     background-color: var(--cor1);
