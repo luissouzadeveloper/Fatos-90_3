@@ -29,6 +29,7 @@
 body{
     font-family: var(--fonte-padrao);
     font-size: 1.1em;
+    
 }
 
 /*Cabeçalho*/
@@ -78,7 +79,7 @@ section{
 /*Corpo do conteúdo*/
 .corpo{
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     max-width: 450px;
 }
 
@@ -105,14 +106,14 @@ section > p{
 }
 
 main > p{
-    margin: 15px;
+    margin: 15px 0;
     line-height: 1.5;
     text-align: justify;
 }
 
 /*Quadro da imagem*/
 figure{
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     padding: 10px;
     border: 2px solid var(--cor3);
 }
@@ -121,10 +122,11 @@ figure{
 figcaption{
     text-align: center;
     margin: 10px;
+    color: var(--cor5);
 }
 
 figcaption > a{
-    color: var(--cor3);
+    color: var(--cor5);
     text-decoration: none;
 }
 
@@ -133,6 +135,55 @@ figcaption > a:hover{
 }
 
 /*Imagem*/
-img{
+figure > img{
     width: 100%;
+}
+
+/*Rodapé*/
+footer{
+    background-color: var(--cor1);
+}
+
+footer > p{
+    text-align: center;
+    padding: 10px;
+}
+
+/*Tablets*/
+@media (min-width: 760px){
+    .corpo{
+        max-width: 750px;
+        margin: auto;
+    }
+
+    main > p{
+        margin: 15px 0;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    figure{
+        width: 70%;
+        height: 70%;
+        display: block;
+        margin: auto;
+    }
+    
+    figure > img{
+        width: 100%;
+    }
+}
+
+/*Desktops*/
+@media (min-width: 1200px){
+    .corpo{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    main > p{
+        margin: 15px 0;
+        line-height: 1.5;
+        text-align: justify;
+    }    
 }
