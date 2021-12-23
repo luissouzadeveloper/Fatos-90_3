@@ -111,6 +111,13 @@ main > p{
     text-align: justify;
 }
 
+/*Link do texto*/
+main > p > a{
+    color: var(--cor3);
+    background-color: var(--cor2);
+    padding: 4px;
+}
+
 /*Quadro da imagem*/
 figure{
     background-color: var(--cor2);
@@ -159,6 +166,10 @@ figure > img{
 /*Links do extra*/
 .item > a{
     color: var(--cor5);
+}
+
+.item > a:hover{
+    color: var(--cor2);
 }
 
 /*Rodapé*/

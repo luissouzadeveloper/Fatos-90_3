@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*Fontes*/
+@font-face{
+    font-family: Crime;
+    src: url(../fonts/classic_robot/Classic\ Robot\ Condensed.otf);
+    font-weight: normal;
+}
+
+/*Variáveis*/
+:root{
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-crime: 'Crime', cursive;
+
+    --cor1: #e12c22;
+    --cor2: #d42b2b;
+    --cor3: #000;
+    --cor4: #b1b1b1;
+    --cor5: #fff;
+}
+
+/*Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Corpo da página*/
+body{
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    
+}
+
+/*Cabeçalho*/
+header{
+    background-color: var(--cor1);
+    height: 60px;
+    display: flex;
+    padding: 10px;
+    justify-content: center; /*<- Imagem ao centro*/
+}
+
+/*Menu*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor2);
+    padding: 10px;
+}
+
+/*Links do menu*/
+nav > a{
+    text-decoration: none;
+    color: var(--cor3);
+    transition: 1s;
+}
+
+/*Animation Links*/
+nav > a:hover{
+    background-color: var(--cor5);
+    padding: 3px;
+    text-decoration: underline;
+}
+
+/*Corpo*/
+main{
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 450px;
+}
+
+/*Título principal*/
+main > h1{
+    text-align: center;
+    font-family: var(--fonte-crime);
+    margin: 15px;
+    font-size: 2.3em;
+}
+
+/*Caixa*/
+.item{
+    display: flex;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 7px;
+}
+
+/*Imagens*/
+.item > a > img{
+    width: 100%;
+}
+
+/*Rodapé*/
+footer{
+    background-color: var(--cor1);
+}
+
+footer > p{
+    text-align: center;
+    padding: 10px;
+}
