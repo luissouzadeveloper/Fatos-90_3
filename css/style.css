@@ -134,7 +134,7 @@ figcaption{
 
 figcaption > a{
     color: var(--cor5);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 figcaption > a:hover{
